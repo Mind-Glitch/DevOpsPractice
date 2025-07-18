@@ -1,0 +1,9 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+
+workspace.xml
+tasks.xml
+dictionaries/
+vcs.xml
