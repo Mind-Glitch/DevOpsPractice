@@ -1,2 +1,3 @@
 # DevOpsPractice
-Collection of projects to try DevOps
+
+Коллекция приложений, созданная для самообучения и демонстрации навыков автора ( см. [Лицензия](./LICENSE.md) )
