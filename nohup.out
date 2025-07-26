@@ -1,0 +1,7 @@
+QSystemTrayIcon::setVisible: No Icon set
+IpcClient::init succeed
+Started AmneziaVPN version 4.8.5.0 2a6e6a1
+Debian GNU/Linux 12 (bookworm) (x86_64)
+SSL backend: OpenSSL 3.0.16 11 Feb 2025
+sudo: unable to restore terminal settings: Ошибка ввода/вывода
+sudo: a password is required

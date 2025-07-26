@@ -1,8 +1,6 @@
-import uvicorn
-
 from persistance.serve_static_file import is_static_file, get_file_content
-from web_api.home_controller import index, get_data
-
+from web_api.home_controller import index, get_data, process_number
+from web_api.cors_middleware import CorsMiddleware
 
 async def app(scope, receive, send):
     assert scope["type"] == "http"
@@ -29,6 +27,8 @@ async def app(scope, receive, send):
         await index(receive, send)
     elif web_path == '/data':
         await get_data(receive, send)
+    elif web_path == '/api/process_number':
+        await process_number(receive, send)
     else :
         await send({
             "type": "http.response.start",
@@ -42,3 +42,4 @@ async def app(scope, receive, send):
             "body": "page not found".encode('utf-8')
         })
 
+app = CorsMiddleware(app)

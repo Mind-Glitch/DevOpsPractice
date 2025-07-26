@@ -10,5 +10,4 @@ def main_function():
 
 # entrypoint
 if __name__ == "__main__":
-
     main_function()
