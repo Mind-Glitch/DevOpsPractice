@@ -3,7 +3,7 @@ FROM python:3.14.0rc1-bookworm
 LABEL maintainer="rosst0564@gmail.com"
 ENV ADMIN="rosst"
 
-RUN apk update && apk upgrade -y
+RUN apt update && apt upgrade -y
 
 WORKDIR /app
 
