@@ -20,6 +20,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./Django_RESTful/
-          file: .Django_RESTful/Dockerfile
+          file: ./Django_RESTful/Dockerfile
           push: false      
           tags: mindglitch/python-asgi:latest
